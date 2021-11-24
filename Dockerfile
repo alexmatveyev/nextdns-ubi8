@@ -9,5 +9,4 @@ RUN curl -Ls https://repo.nextdns.io/nextdns.repo -o /etc/yum.repos.d/nextdns.re
     setcap 'cap_net_bind_service=+ep' /usr/bin/nextdns
 
 EXPOSE 53/tcp 53/udp
-
 ENTRYPOINT ["/usr/bin/nextdns","run", "-config-file", "/etc/nextdns.conf"]
