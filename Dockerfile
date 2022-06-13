@@ -1,7 +1,8 @@
 FROM registry.access.redhat.com/ubi8/ubi-init
 LABEL nextdns.build.version="v1.37.11"
-#LABEL quay.expires-after=3w
+# LABEL quay.expires-after=3w
 
+# https://github.com/nextdns/nextdns
 RUN curl -Ls https://repo.nextdns.io/nextdns.repo -o /etc/yum.repos.d/nextdns.repo; \
     yum -y install --disableplugin=subscription-manager -y nextdns; \
 #    yum -y install --disableplugin=subscription-manager -y bind-utils ; \
