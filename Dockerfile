@@ -1,5 +1,5 @@
 FROM registry.access.redhat.com/ubi8/ubi-init
-LABEL nextdns.build.version="v1.39.4"
+LABEL nextdns.build.version="v1.40.1"
 # LABEL quay.expires-after=3w
 
 # https://github.com/nextdns/nextdns
